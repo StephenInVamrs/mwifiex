@@ -123,7 +123,7 @@ ccflags-y += -DLINUX
 
 KERNELDIR ?= $(KERNEL_DIR)
 ARCH ?= arm64
-CONFIG_IMX_SUPPORT=y
+CONFIG_IMX_SUPPORT=n
 ifeq ($(CONFIG_IMX_SUPPORT),y)
 ccflags-y += -DIMX_SUPPORT
 endif

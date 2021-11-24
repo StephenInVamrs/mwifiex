@@ -2815,7 +2815,7 @@ void woal_free_moal_handle(moal_handle *handle);
 /** shutdown fw */
 mlan_status woal_shutdown_fw(moal_private *priv, t_u8 wait_option);
 /* Functions in interface module */
-#if LINUX_VERSION_CODE >= KERNEL_VERSION(5, 4, 0)
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(4, 5, 0)
 static inline void wakeup_source_init(struct wakeup_source *ws,
 				      const char *name)
 {
